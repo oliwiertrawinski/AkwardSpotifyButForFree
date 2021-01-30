@@ -10,11 +10,11 @@
       android:id="@+id/listItemSongCover"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      tools:src="@tools:sample/avatars"
-      app:layout_constraintStart_toStartOf="parent"
       android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      android:layout_marginTop="8dp" />
+      tools:src="@tools:sample/avatars" />
 
   <TextView
       android:id="@+id/listItemTitle"

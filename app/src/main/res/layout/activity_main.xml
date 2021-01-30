@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/songTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Song title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/songAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Song author"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/songCover"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/no_cover" />
+
+    <SeekBar
+        android:id="@+id/positionBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/elapsedTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="0:11" />
+
+        <TextView
+            android:id="@+id/remainingTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="-1:11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/previousBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/previous1" />
+
+        <Button
+            android:id="@+id/playBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/stop" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/next"
+            android:layout_marginLeft="55dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
